@@ -338,3 +338,22 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/Assets/Plugins/Sirenix
+/Assets/Sound
+/Build 3
+/Library
+/Build 5
+/Build 4
+/Temp
+/SecondBuild.zip
+/ProjectSettings
+/Prerelease.zip
+/Prerelease 2.zip
+/Prerelease 2
+/Prerelease
+/First Build.zip
+/Build 5.zip
+/Build 4.zip
+/Build 3.zip
+/Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj
+/Sirenix.OdinInspector.CompatibilityLayer.csproj
