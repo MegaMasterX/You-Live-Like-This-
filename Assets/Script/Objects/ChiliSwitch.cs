@@ -17,6 +17,8 @@ public class ChiliSwitch : MonoBehaviour
     Animator pipeAnimator;
     Animator BucketAnimator;
 
+    public bool SwitchDisabled = false;
+
     void Start()
     {
         mInput = new MasterInput();
@@ -43,10 +45,14 @@ public class ChiliSwitch : MonoBehaviour
     {
         if (IsPlayerInRange)
         {
-            if (GameObject.Find("Field Objects").GetComponent<BucketManager>().AtPipe == true)
+            if (GameObject.Find("Field Objects").GetComponent<BucketManager>().AtPipe == true && SwitchDisabled == false)
             {
                 if (BucketFilling == false)
+                {
                     FlipSwitchOn();
+                    SwitchDisabled = true;
+                }
+                    
 
             }else
             {

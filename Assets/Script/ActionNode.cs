@@ -73,7 +73,7 @@ public class ActionNode : MonoBehaviour
                         if (StatBoostType == Action.StatType.Entertainment)
                         {
                             GameObject.Find("Loudspeaker").GetComponent<Loudspeaker>().PlayRandomToyVO();
-                            //GameObject.Find("HUD_Held").GetComponent<HeldHUD>().ShownHUD = HeldHUD.HUDElement.BottleWater;
+                            GameObject.Find("HUD_Held").GetComponent<HeldHUD>().ShownHUD = HeldHUD.HUDElement.Toy;
                         }
                         
                         if (StatBoostType == Action.StatType.Heat)
@@ -155,6 +155,7 @@ public class ActionNode : MonoBehaviour
                 GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayFullDrop();
                 Debug.Log("Trigger [CLIENT]: Bucket placed at Client.");
                 GameObject.Find("HUD_Held").GetComponent<HeldHUD>().ShownHUD = HeldHUD.HUDElement.Empty;
+                GameObject.Find("ChiliSwitch").GetComponent<ChiliSwitch>().SwitchDisabled = false; //Re-enable this stupid fucking switch
                 GameObject.Find("Reboot Trigger").GetComponent<RebootManager>().RandomBSODChanceTrigger();
                 break;
             case Action.StatType.Water:

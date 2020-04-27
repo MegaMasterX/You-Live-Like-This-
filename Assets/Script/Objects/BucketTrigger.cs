@@ -39,11 +39,15 @@ public class BucketTrigger : MonoBehaviour
 
         if (IsTriggerActive == false && bMgr.InPlayerPosession == true && thisTriggerPosition == Position.Pipe && IsPlayerInRange) //Is the empty bucket in the player posession?
         {
-            bMgr.InPlayerPosession = false; //The bucket has been dropped.
-            bMgr.AtPipe = true; //The bucket is at the pipe.
-            GameObject.Find("BucketPlace").GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 0.0f); //Enable the bucket.
-            GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayEmptyDrop();
-            GameObject.Find("HUD_Held").GetComponent<HeldHUD>().ShownHUD = HeldHUD.HUDElement.Empty;
+            if (GameObject.Find("ChiliSwitch").GetComponent<ChiliSwitch>().SwitchDisabled == false) 
+            {
+                bMgr.InPlayerPosession = false; //The bucket has been dropped.
+                bMgr.AtPipe = true; //The bucket is at the pipe.
+                GameObject.Find("BucketPlace").GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 0.0f); //Enable the bucket.
+                GameObject.Find("AudioManager").GetComponent<AudioManager>().PlayEmptyDrop();
+                GameObject.Find("HUD_Held").GetComponent<HeldHUD>().ShownHUD = HeldHUD.HUDElement.Empty;
+
+            }
 
         }
 
