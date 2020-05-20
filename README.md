@@ -9,8 +9,11 @@ A playable version (with WebGL option) is avalable at [the Ludum Dare project pa
 
 # Project Team
 Graphics: Lurkin McClerkin (@Lurrkin)
+
 Programming: Bryan H. (@MegaMasterX)
+
 Audio and Writing: Eric S. (@Nimmems)
+
 Audio and VO: Daniel A. (@NowdaZar)
 
 # Tools
