@@ -1,7 +1,7 @@
 # Ludum Dare 46 Title: You Live Like This?
 >LD46 - Theme: Keep It Alive
 
-This repo contains assets and scripts for the Ludum Dare 46 entry developed by a team during Ludum Dare 46. The Ludum Dare is a global game jam competition where teams of people can compete to create a game centered around a theme in 72 hours, or 48 hours if working solo. 
+This repo contains assets and scripts for the an entry developed by a team during Ludum Dare 46. The Ludum Dare is a global game jam competition where teams of people can compete to create a game centered around a theme in 72 hours, or 48 hours if working solo. 
 
 More information on the Ludum Dare can be found at [their website.](http://ldjam.com/about)
 
